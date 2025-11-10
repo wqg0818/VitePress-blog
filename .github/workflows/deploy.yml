@@ -25,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22 # 更新为与您本地相同的版本
+          node-version: 22
           cache: npm
 
       - name: Setup Pages
@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Build with VitePress
-        run: npm run build
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

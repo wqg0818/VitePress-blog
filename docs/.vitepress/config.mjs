@@ -8,23 +8,45 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '博客', link: '/blog/' },
+      { text: '首页', link: '/' },
+      { text: '博客', link: '/blog/index' },
       { text: '关于', link: '/about' }
     ],
 
-    sidebar: [
-      {
-        text: '文档',
-        items: [
-          // { text: 'Markdown Examples', link: '/markdown-examples' },
-          // { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/blog/': [
+        {
+          text: 'HTML&CSS',
+          collapsed: true,
+          items: [
+            {text: 'HTML', link: '/blog/html/index'},
+            { text: 'CSS', link: '/blog/css/index' }
+          ]
+        },
+        {
+          text: 'Javascript',
+          collapsed: true,
+          items: [
+
+          ]
+        },
+        {
+          text: 'Vue',
+          collapsed: true,
+          items: [
+
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/wqg0818' }
-    ]
+    ],
+
+    carbonAds: {
+      code: 'your-carbon-code',
+      placement: 'your-carbon-placement'
+    }
   }
 })

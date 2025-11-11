@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "VitePress-blog"
-  text: "基于VitePress的文档管理系统"
+  name: "my-notes"
+  text: "岁月如歌，代码如诗！"
   tagline: My great project tagline
   actions:
     - theme: brand
